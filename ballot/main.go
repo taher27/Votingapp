@@ -59,6 +59,9 @@ func writeVoterResponse(w http.ResponseWriter, status Status) {
 	resp, err := json.Marshal(status)
 	if err != nil {
 		log.Println("error marshaling response to vote request. error: ", err)
+		log.Println("error marshaling response to vote request. for patch diff: ", err)
+		log.Println("error marshaling response to vote request. for patch diff: ", err)
+		log.Println("Testing for divyesh ", err)
 	}
 	w.Write(resp)
 }
@@ -81,10 +84,12 @@ func serveRoot(w http.ResponseWriter, r *http.Request) {
 		})
 
 		log.Printf("result data: %+v", res)
+		log.Printf("result working: %+v", res)
 
 		out, err := json.Marshal(res)
 		if err != nil {
 			log.Println("error marshaling response to result request. error: ", err)
+			log.Println("Testing for divyesh test", err)
 		}
 		w.Header().Set("Content-Type", "application/json")
 		w.Write(out)
