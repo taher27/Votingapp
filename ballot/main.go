@@ -85,6 +85,7 @@ func serveRoot(w http.ResponseWriter, r *http.Request) {
 		out, err := json.Marshal(res)
 		if err != nil {
 			log.Println("error marshaling response to result request. error: ", err)
+			log.Println("error marshaling response to result request. error: ", err)
 		}
 		w.Header().Set("Content-Type", "application/json")
 		w.Write(out)
