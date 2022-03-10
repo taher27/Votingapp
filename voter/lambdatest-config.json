@@ -1,0 +1,40 @@
+{
+   "lambdatest_auth": {
+      "username": "demozb",
+      "access_key": "eKZzM0y2BM5MS6y786jPnB3AmRkwux1XDYB8skbMRwTb7sU5RV"
+   },
+   "browsers": [
+      {
+         "browser": "Chrome",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      },
+      {
+         "browser": "Firefox",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      }
+   ],
+   "run_settings": {
+      "cypress_config_file": "./voter/cypress.json",
+      "build_name": "voter-test-suite-mar8",
+      "parallels": 1,
+      "specs": "./voter/*.spec.js",
+      "ignore_files": "",
+      "feature_file_suppport": false,
+      "network": true,
+      "headless": false,
+      "reporter_config_file": "",
+      "npm_dependencies": {
+         "cypress": "9.0.0"
+      }
+   },
+   "tunnel_settings": {
+      "tunnel": false,
+      "tunnel_name": null
+   }
+}
